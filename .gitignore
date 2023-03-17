@@ -1,8 +1,5 @@
-# example input/output files
-*.csv
-*.xls
-*.xlsx
-*.txt
+# example output files
+output/*.xlsx
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
