@@ -1,7 +1,7 @@
 import numpy as np
 from pandas import DataFrame, read_csv
 from os import environ as envs
-from os import chdir, getcwd
+from os import chdir, getcwd, makedirs
 from time import sleep, strftime
 from datetime import datetime
 from dotenv import load_dotenv

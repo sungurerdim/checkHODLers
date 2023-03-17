@@ -37,7 +37,11 @@ def main() -> None:
     address_list: List[Tuple[str, str]] = read_csv_file(input_file)
     address_list: List[Tuple[str, str]] = [(row[0].lower(), row[1].lower()) for row in address_list]
 
-    chdir("output")
+    output_directory = "output"
+    if not path.exists(output_directory):
+        makedirs(output_directory)
+
+    chdir(output_directory)
 
     balances: List[List[str]] = []
     balances.append(['Address', 'Token', 'Total Balance'])

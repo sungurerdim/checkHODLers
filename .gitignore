@@ -1,5 +1,5 @@
 # example output files
-output/*.xlsx
+*.xlsx
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
